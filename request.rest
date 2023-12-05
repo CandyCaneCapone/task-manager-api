@@ -1,0 +1,28 @@
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+    "title" : "first" , 
+    "desc" : "this is first" , 
+    "completed" : false  
+}
+ 
+###
+GET http://localhost:5000/api/tasks
+
+###
+GET http://localhost:5000/api/tasks/6569ae6c672ac807dbce508c
+
+### 
+PATCH http://localhost:5000/api/tasks/6569ae6c672ac807dbce508c
+Content-Type: application/json
+
+{
+    "title":"Edited title"
+}
+
+### 
+DELETE http://localhost:5000/6569aeb5672ac807dbce5090
+
+### 
+GET http://localhost:5000/adadd
